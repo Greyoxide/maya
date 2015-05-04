@@ -1,0 +1,21 @@
+@import "mixins";
+@import "normalize";
+
+@import "typography";
+@import "layout";
+@import "navigation";
+
+@import "style";
+
+
+/* Colors */
+
+$text-color: #333;
+
+$page-color: #EDF2F4;
+
+$light-grey: #D8D8D8;
+$medium-grey: darken($light-grey, 20%);
+
+$primary: #EF233C;
+$secondary: #8D99AE;
