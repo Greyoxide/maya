@@ -14,11 +14,11 @@
    height="235.49001"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9943 custom"
+   inkscape:version="0.91+devel+osxmenu r12896"
    sodipodi:docname="logo.svg"
-   inkscape:export-filename="/Users/forrest/sites/mayagraphics/source/images/logoW.png"
-   inkscape:export-xdpi="89.843674"
-   inkscape:export-ydpi="89.843674">
+   inkscape:export-filename="/Users/forrest/Projects/static/maya/source/images/logoW.png"
+   inkscape:export-xdpi="57.49995"
+   inkscape:export-ydpi="57.49995">
   <defs
      id="defs4">
     <linearGradient
@@ -195,17 +195,17 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.175"
-     inkscape:cx="88.494562"
-     inkscape:cy="-16.966243"
+     inkscape:cx="-774.36258"
+     inkscape:cy="-22.680529"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1727"
-     inkscape:window-height="933"
+     inkscape:window-width="1280"
+     inkscape:window-height="751"
      inkscape:window-x="0"
-     inkscape:window-y="22"
+     inkscape:window-y="23"
      inkscape:window-maximized="0"
      fit-margin-top="20"
      fit-margin-left="20"
@@ -219,7 +219,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>

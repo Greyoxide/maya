@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400|Montserrat:400,700);
+@import "font-awesome";
 
 $heading: 'Montserrat', serif;
 $text: 'Lato', serif;
@@ -32,6 +33,7 @@ a, p, span, label, li {
   font-weight: 100;
   font-style: italic;
   margin: 5px;
+  text-align: center;
   &.large {
   	font-size: 2em;
   }
