@@ -17,3 +17,4 @@ gem "tzinfo-data", platforms: [:mswin, :mingw, :jruby]
 
 gem 'middleman-autoprefixer'
 gem 'font-awesome-middleman'
+gem 'middleman-gh-pages'

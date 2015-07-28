@@ -1,0 +1,186 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+div {
+	box-sizing: border-box;
+}
+
+.image {
+	img{
+		width: 100%;
+	}
+}
+
+.hero {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	.inner {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+	}
+}
+
+.feature {
+	text-align: center;
+	padding: 20px;
+	margin: 10px auto;
+	max-width: 800px;
+  h1 {font-weight: bold;}
+}
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  .cell {
+    display: inline-block;
+    padding: 20px;
+    &.qtr {
+      flex: 1 0 25%;
+      max-width: 25%;
+      @include tablet {flex: 1 0 50%; max-width: 50%;};
+      @include phone {flex: 1 0 100%; max-width: 100%;};
+    }
+    &.third {
+      flex: 1 0 33.33%;
+      @include tablet {flex: 1 0 50%};
+      @include phone {flex: 1 0 100%};
+    }
+    &.half {
+      flex: 1 0 50%;
+      @include phone {flex: 1 0 100%};
+    }
+    &.three-qtr {
+      flex: 1 0 75%;
+      @include phone {flex: 1 0 75%};
+    }
+  }
+}
+
+.flex-blades {
+  height: 100%;
+  display:flex;
+  flex-direction: row;
+  justify-content: stretch;
+  flex-wrap: nowrap;
+  @include tablet {flex-direction: column;}
+  @include phone {
+    display: block;  }
+  .blade {
+    flex: 1;
+    height: 100%;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: .5s;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 20px;
+    border-right: 1px solid #b3b3b3;
+    @include tablet {
+      border: 0;
+      border-bottom: 1px solid #b3b3b3;
+    }
+    @include phone {
+      border: 0;
+      border-bottom: 1px solid #b3b3b3;
+      height: initial;
+      padding: 20px 0;
+    }
+    &:last-of-type {border: 0;}
+    flex-shrink: 5;
+    cursor: pointer;
+    .image {
+      width: 100px;
+      height: 100px;
+      padding: 10px;
+      img {width: 100%;}
+      margin: 20px auto;
+      transition: .5s;
+      border-radius: 50%;
+      @include tablet {display: none;}
+      @include phone {display: none;}
+    }
+    h1 {
+      width: 100%;
+      transform: rotate(-90deg);
+      font-weight: 400;
+      font-size: 1.3em;
+      text-align: left;
+      transition: .5s;
+      white-space: nowrap;
+      @include tablet {transform: none}
+      @include phone {transform: none}
+    }
+    ul {
+      display: none;
+    }
+
+    &:hover {
+      h1 {
+        color: $primary;
+      }
+      transform: rotateY(25deg);
+      border-right: 5px solid #e1e1e1;
+      transform-origin: left;
+      box-shadow: 20px 0px 30px -10px rgba(0, 0, 0, 0.5), inset 10px 0 12px -6px rgba(0,0,0, 0.2);
+    }
+
+    @include tablet{
+      &:hover {
+        box-shadow: none;
+        transform: none;
+        box-shadow: none;
+      }
+    }
+    @include phone{
+      &:hover {
+        box-shadow: none;
+        transform: none;
+        box-shadow: none;
+      }
+    }
+
+
+    &.active {
+      background-color: #f6f6f6;
+      &:hover {
+        transform: none;
+        transform-origin: left;
+        box-shadow: none;
+        h1 {color: $text-color};
+        border-right: 1px solid #b3b3b3;
+      }
+
+      flex-grow: 5;
+      cursor: inherit;
+      justify-content: center;
+      .image {display: none;}
+      h1 {
+        transform: none;
+        border-bottom: 1px solid #ececec;
+        padding: 20px 0;
+        text-align: center;
+      }
+      ul {
+        display: block;
+        list-style: none;
+        padding: 0;
+        li {
+          text-align: center;
+          padding: 15px 0;
+        }
+      } 
+    }
+  }
+
+}

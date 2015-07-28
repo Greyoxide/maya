@@ -1,0 +1,55 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400|Montserrat:400,700);
+@import "font-awesome";
+
+$heading: 'Montserrat', serif;
+$text: 'Lato', serif;
+
+a, p, span, label, li {
+	font-family: $text;
+	font-weight: 300;
+  color: $text-color;
+}
+
+.heading {
+  font-family: $heading;
+  font-weight: 700;
+  margin: 5px;
+  text-align: center;
+  color: $text-color;
+  &.large {
+  	font-size: 3em;
+  }
+  &.medium {
+  	font-size: 1.8em
+  }
+  &.minor {
+  	font-size: 1.2em;
+  }
+  &.bold {
+  	font-weight: bold;
+  }
+}
+
+.subheading {
+  font-family: $text;
+  font-weight: 300;
+  font-style: italic;
+  margin: 5px;
+  text-align: center;
+  color: lighten($text-color, 10%);
+  &.large {
+  	font-size: 2em;
+    @include phone{font-size: 1.2em};
+  }
+  &.medium {
+  	font-size: 1.5em;
+    @include phone{font-size: 1em};
+  }
+  &.minor {
+  	font-size: 1.2em;
+    @include phone{font-size: .8em};
+  }
+  &.bold {
+  	font-weight: bold;
+  }
+}
