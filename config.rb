@@ -1,3 +1,5 @@
+activate :autoprefixer
+
 ###
 # Compass
 ###
