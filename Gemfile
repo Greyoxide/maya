@@ -15,3 +15,5 @@ gem "tzinfo-data", platforms: [:mswin, :mingw, :jruby]
 
 gem 'middleman-autoprefixer'
 gem 'font-awesome-middleman'
+
+gem 'middleman-dokku', :git => 'https://github.com/ngmaloney/middleman-dokku.git'
