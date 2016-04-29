@@ -163,7 +163,7 @@ div {
 
       flex-grow: 5;
       cursor: inherit;
-      justify-content: center;
+      justify-content: flex-start;
       .image {display: none;}
       h1 {
         transform: none;
@@ -179,7 +179,7 @@ div {
           text-align: center;
           padding: 15px 0;
         }
-      } 
+      }
     }
   }
 
