@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-	$('.page-hero').height($(window).height()-($('#lead-feature').height()+$('#navigation').height()) )
+	// $('.page-hero').height($(window).height()-($('#lead-feature').height()+$('#navigation').height()) )
 
 	$('.blade').click(function() {
 		$('.blade').removeClass("active");
